@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background text-text font-sans antialiased;
+  }
+}
+
+.glass-card {
+  @apply bg-surface/80 backdrop-blur-md border border-white/10 rounded-2xl shadow-xl transition-all duration-500 ease-out;
+}
+.glass-card:hover {
+  @apply border-white/20 shadow-primary/20 -translate-y-1;
+}
+
+.btn-reactive {
+  @apply transition-all duration-300 transform hover:scale-105 active:scale-95 shadow-lg active:shadow-md cursor-pointer;
+}
